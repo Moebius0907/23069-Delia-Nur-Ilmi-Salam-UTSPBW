@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemrograman Web</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header class="navbar-container">
+        <nav class="nav-list">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="pemrogramanWeb.html">Pemrograman Web</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="web-container">
+        <h1>Pemrograman Web</h1>
+
+        <!-- materi 1 -->
+        <div class="lesson">
+            <h2>Pertemuan 1: Pengenalan HTML</h2>
+            <p>HTML (Hypertext Markup Language) adalah bahasa markup untuk membuat struktur halaman web.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+&lt;title&gt;Halaman Web Saya&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Selamat Datang&lt;/h1&gt;
+&lt;p&gt;Ini adalah contoh paragraf&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </div>
+
+        <!-- materi 2 -->
+        <div class="lesson">
+            <h2>Pertemuan 2: CSS Dasar</h2>
+            <p>CSS digunakan untuk mendesain tampilan halaman web.</p>
+            <pre><code>body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: blue;
+}</code></pre>
+        </div>
+
+        <!-- materi 3 -->
+        <div class="lesson">
+            <h2>Pertemuan 3: JavaScript Dasar</h2>
+            <p>JavaScript digunakan untuk menambahkan interaksi ke dalam halaman web.</p>
+            <pre><code>&lt;script&gt;
+function tampilPesan() {
+    alert("Halo, ini pesan dari JavaScript!");
+}
+&lt;/script&gt;
+
+&lt;button onclick="tampilPesan()"&gt;Klik Saya&lt;/button&gt;
+            </code></pre>
+        </div>
+
+        <!-- materi 4 -->
+        <div class="lesson">
+            <h2>Pertemuan 4: Pengenalan PHP</h2>
+            <p>PHP adalah bahasa pemrograman yang digunakan untuk membuat web dinamis.</p>
+            <pre><code>&lt;?php
+echo "Halo, ini adalah halaman PHP pertama saya!";
+?&gt;</code></pre>
+        </div>
+
+        <!-- materi 5 -->
+        <div class="lesson">
+            <h2>Pertemuan 5: Mengontrol Alur Program</h2>
+            <p>PHP mendukung kontrol alur seperti if-else dan switch-case.</p>
+            <pre><code>&lt;?php
+$nilai = 80;
+if ($nilai >= 75) {
+    echo "Anda lulus!";
+} else {
+    echo "Anda gagal!";
+}
+?&gt;</code></pre>
+        </div>
+
+        <!-- materi 6 -->
+        <div class="lesson">
+            <h2>Pertemuan 6: Perulangan dan Array</h2>
+            <p>PHP mendukung perulangan dan array untuk mengelola data.</p>
+            <pre><code>&lt;?php
+$buah = array("Apel", "Mangga", "Pisang");
+foreach ($buah as $b) {
+    echo $b . "&lt;br&gt;";
+}
+?&gt;</code></pre>
+        </div>
+
+    </section>
+</body>
+</html>

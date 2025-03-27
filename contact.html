@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hubungi saya melalui formulir kontak ini untuk pertanyaan atau kerja sama.">
+    <title>Kontak</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- SweetAlert untuk notifikasi -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- EmailJS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- File JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+     <!-- navbar -->
+     <header class="navbar-container">
+        <nav class="nav-list">
+            <ul>
+                <!-- link ke halaman lain -->
+                <li><a href="home.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="pemrogramanWeb.html">Pemrograman Web</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-container">
+            <h2>Hubungi Saya</h2>
+            <form id="contactForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subjek:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+
+        </section>
+         <h2>Atau hubungi melalui:</h2>
+         <div class="kontak-container">
+            <a href="mailto:delianurilmi@gmail.com" target="_blank" class="kontak-item">
+                <img src="img/gmail.png" alt="Gmail" class="icon-kontak">
+                <p>Gmail</p>
+            </a>
+            <a href="https://wa.me/6288218985467" target="_blank" class="kontak-item">
+                <img src="img/whatsapp.png" alt="WhatsApp" class="icon-kontak">
+                <p>WhatsApp</p>
+            </a>
+        </div>
+
+        
+    </main>
+
+</body>
+</html>

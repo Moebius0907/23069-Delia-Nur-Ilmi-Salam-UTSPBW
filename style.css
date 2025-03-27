@@ -1,0 +1,425 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ecffcc;
+  text-align: center;
+}
+
+/*NAVBAR*/
+header.navbar-container {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  background: #d4ff89; 
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2e7d32;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color:  #2e7d32; 
+  color: white;
+}
+
+/* styling hero */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+p {
+  margin: 8px 10px;
+  color: #2e7d32;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.hero img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid  #2e7d32;
+  display: block;
+  margin: 20px auto;
+}
+
+/* styling overview */
+.overview-container {
+    padding: 15px;
+    margin: 10px auto;
+}
+
+.overview-container h2 {
+    margin-bottom: 10px; /* Sedikit jarak di bawah heading */
+}
+.overview-container p{
+    color: #666;
+    font-size: 14px;
+}
+
+/* Styling skill di home */
+.skill-container {
+    padding: 20px;
+}
+
+.skill-container h2{
+     margin-bottom: 25px; /* Sedikit jarak di bawah heading */
+}
+
+.skill-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background:  #dfffb3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 140px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    margin: 10px 0 5px;
+    color: #2e7d32;
+}
+
+.skill-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Styling kontak */
+.contact-container {
+  background-color: #dfffb3;
+  padding: 20px;
+  max-width: 400px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;  
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+  color:  #2e7d32;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color:  #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255);
+  color: #2e7d32;
+  font-style: bold;
+
+}
+
+.kontak-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; 
+  margin-top: 25px;
+  padding-bottom: 80px; 
+}
+
+.kontak-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.kontak-item img {
+  width: 40px; 
+  height: auto;
+}
+
+.kontak-item:hover {
+    animation: bounce 0.5s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+
+/* Styling about me */
+.about-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #4CAF50;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling pendidikan*/
+.education-container {
+  background-color: #eaffc4;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.education-container h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.education-container p{
+  color: #666;
+}
+
+.minat-container {
+  background-color: #eaffc4;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.minat-container h2 {
+  color:  #2f5d31;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.minat-container p{
+  color: #666;
+  font-style: bold;
+}
+
+/* Styling pengalaman */
+.experience-container {
+  padding: 30px;
+  background-color: #eaffc4;
+  border-radius: 12px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 900px;
+}
+
+.experience-container h2 {
+  color: #2f5d31;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.experience-card {
+  display: flex;
+  background-color: #dfffb3;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 15px auto;
+  max-width: 850px;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.experience-card:hover {
+  transform: scale(1.03);
+}
+
+.experience-card img {
+  width: 160px;
+  height: 110px;
+  border-radius: 12px;
+  margin-right: 20px;
+  object-fit: cover;
+  border: 3px solid  #2e7d32;
+}
+
+.experience-text {
+  text-align: left;
+}
+
+.experience-text h3 {
+  margin: 0;
+  color: #2f5d31;
+  font-size: 18px;
+}
+
+.experience-text p {
+  margin: 8px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Styling lesson (materi)*/
+.web-container {
+  padding: 20px;
+  text-align: left;
+  max-width: 800px;
+  margin: auto;
+}
+
+.web-container h1{ 
+    text-align: center;
+}
+
+.lesson {
+  background-color: #eaffc4;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lesson h2 {
+  color: #2f5d31;
+  text-align: center;
+}
+
+pre {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  text-align: left;
+}
+
+code {
+  font-family: "Courier New", monospace;
+  color: #d32f2f;
+  align-items : left;
+  display: block;
+}
+
+
+footer {
+    background-color:  #dfffb3; /* Warna hijau pastel */
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #2d572c;
+    font-weight: bold;
+    border-top: 3px solid #4CAF50; /* Garis atas */
+}
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  header.navbar-container .nav-list li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .experience-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experience-card img {
+    margin: 0 auto 10px auto;
+  }
+}
+
